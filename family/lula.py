@@ -1,12 +1,11 @@
-from persona import Persona
+from person import Person
 
-class Lula(Persona):
-
+class Lula(Person):
     def __init__ (self,knowledge):
         super().__init__(knowledge)
-        self.knowledge=knowledge
 
-   
-    def estudiar(self):
-        self.knowledge= self.knowledge+100 
-    
+    def study(self):
+        self.setKnowledge(self.knowledge()+120)
+
+    def amnesia(self):
+        self.setKnowledge(self.knowledge()-50)

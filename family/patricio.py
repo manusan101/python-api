@@ -1,11 +1,13 @@
-from persona import Persona
+from person import Person
 
-class Patricio(Persona):
+# Patricio es una clase que hereda de Person
+class Patricio(Person):
     def __init__ (self,knowledge):
         super().__init__(knowledge)
-        self.knowledge=knowledge
 
-    
-    def estudiar(self):
-        self.knowledge= self.knowledge+100 
+    # Redefinimos la funcion study
+    def study(self):
+        self.setKnowledge(self.knowledge()+100)
 
+    # Simpre que se llama a un atributo de la clase Person,
+    # vamos a utilizar los getters y setters.

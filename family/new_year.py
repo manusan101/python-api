@@ -1,13 +1,15 @@
 from patricio import Patricio
 from lula import Lula
 
-def mostrar_conocimiento(Persona):
-   return Persona.show_knowledge()
-
 pato=Patricio(5)
+lula=Lula(234)
 
-lula= Lula(234)
+pato.study()
+lula.amnesia()
 
-pato.estudiar()
-print(mostrar_conocimiento(pato))
-print(mostrar_conocimiento(lula))
+print(pato.knowledge())
+print(lula.knowledge())
+
+# Properties
+# Ejectuar el main por URL, para que nos devuelva
+# los conocimientos de lula y pato.
