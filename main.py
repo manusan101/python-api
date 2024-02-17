@@ -1,10 +1,10 @@
-
-
+# uvicorn main:app --reload
 from fastapi import FastAPI
 
 
 app=FastAPI()
 
-@app.get("/hola")
+@app.get("/")
 async def root():
     return {"message":"hello world"}
+
